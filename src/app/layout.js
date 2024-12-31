@@ -28,62 +28,7 @@ export default function RootLayout({ children }) {
         <TokenProvider>
           <WalletProvider>
             <OriginsProvider>
-              <Path
-                excludePath={[
-                  "/about",
-                  // "/calculator",
-                  "/auth/register",
-                  "/auth/code",
-                  "/auth/password",
-                  "/auth/signup",
-                  "/my",
-                  "/my/ads",
-                  "/my/trades",
-                  "/my/transactions",
-                  "/my/wallet/transactions",
-                  "/my/wallet",
-                  "/buy",
-                  "/price",
-                  "/my/security",
-                  "/my/security/set-password",
-                  "/my/security/change-password",
-                  "/calculator",
-                  "/my/priceSuggestion",
-                  "/my/messages",
-                  "/my/messages/",
-                  "/my/profile",
-                  "/my/wallet/requests",
-                  "/aboutUs",
-                  '/landing-page'
-                ]}
-                childProp={<Header />}
-              ></Path>
-              {children}
-              <Path
-                excludePath={[
-                  "/about",
-                  // '/calculator',
-                  "/auth/register",
-                  "/auth/code",
-                  "/auth/password",
-                  "/auth/signup",
-                  "/buy",
-                  "/my/ads",
-                  "/my/trades",
-                  "/my/transactions",
-                  "/my/wallet",
-                  "/my/wallet/transactions",
-                  "/my/security",
-                  "/my/security/set-password",
-                  "/my/security/change-password",
-                  "/my/priceSuggestion",
-                  "/my/messages",
-                  "/my/messages/",
-                  "/my/profile",
-                  '/landing-page'
-                ]}
-                childProp={<Footer />}
-              ></Path>
+            {children}
             </OriginsProvider>
           </WalletProvider>
         </TokenProvider>
